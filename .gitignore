@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (ham/veri dosyalarını depoya koyma)
+data/*.csv
+data/*.xlsx
+data/*.parquet
+data/*.json
+
+# Model dosyaları ve büyük çıktılar
+models/*.pkl
+models/*.joblib
+
+# Streamlit cache
+.streamlit/
+
+# VS Code
+.vscode/
