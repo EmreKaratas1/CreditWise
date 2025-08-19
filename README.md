@@ -6,7 +6,7 @@ The project showcases the application of **data science in the financial sector*
 ---
 
 ## 🚀 Technologies Used
-- Python 3.10
+- Python 3.10.2
 - NumPy, Pandas
 - Matplotlib, Seaborn
 - Scikit-learn
