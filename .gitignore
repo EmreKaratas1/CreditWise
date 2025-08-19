@@ -14,13 +14,7 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Data (ham/veri dosyalarını depoya koyma)
-data/*.csv
-data/*.xlsx
-data/*.parquet
-data/*.json
-
-# Model dosyaları ve büyük çıktılar
+# Model
 models/*.pkl
 models/*.joblib
 
