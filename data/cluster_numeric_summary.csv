@@ -1,0 +1,6 @@
+,Age,Age,Age,Age,Age,Duration,Duration,Duration,Duration,Duration,Credit amount,Credit amount,Credit amount,Credit amount,Credit amount
+,mean,median,std,min,max,mean,median,std,min,max,mean,median,std,min,max
+cluster,,,,,,,,,,,,,,,
+0,37.5,35.0,11.69,19,67,20.45,18.0,11.9,6,60,2845.4,2030.0,2464.39,368,14179
+1,33.49,31.0,10.66,19,67,19.75,18.0,11.42,4,72,2802.85,2098.0,2386.83,338,18424
+2,36.79,35.0,11.63,20,75,22.11,20.0,12.58,4,60,3841.39,2760.0,3181.34,250,15945
