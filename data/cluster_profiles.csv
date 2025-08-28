@@ -1,0 +1,4 @@
+cluster,size,mean_age,mean_duration,mean_credit_amount,top_housing,top_purpose,top_checking,suggested_name
+0,147,37.5,20.4,2845.0,own (76.2%); rent (16.3%),radio/TV (52.4%); furniture/equipment (27.2%); education (13.6%),unknown (57.1%); moderate (23.1%),Balanced Segment
+1,408,33.5,19.8,2803.0,own (73.0%); rent (18.1%),radio/TV (49.8%); furniture/equipment (34.6%); education (9.1%),unknown (33.3%); little (32.4%),Younger / Short-Duration
+2,445,36.8,22.1,3841.0,own (68.1%); rent (18.2%),car (75.7%); business (21.8%); domestic appliances (2.0%),unknown (39.1%); moderate (27.9%),High-Amount / Long-Duration
