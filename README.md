@@ -10,7 +10,7 @@ The project demonstrates the application of **data science in the financial sect
 - NumPy, Pandas
 - Matplotlib, Seaborn
 - Scikit-learn
-- Streamlit (for interactive dashboard)
+- Streamlit
 - Jupyter Notebook
 
 ---
@@ -19,23 +19,35 @@ The project demonstrates the application of **data science in the financial sect
 ```bash
 CreditWise/
 │
-├── data/ <- Raw dataset
-│   └── german_credit_data.csv
+├── data/ <- Raw and processed datasets
+│   ├── german_credit_data.csv              <- Original raw dataset
+│   ├── german_credit_data_clean.csv        <- Cleaned dataset after preprocessing
+│   ├── german_credit_data_clean_scaled.csv <- Scaled dataset
+│   └── * cluster_*.csv, cluster_profiles.csv, etc.
 │
 ├── notebooks/ <- Analysis & modeling notebooks
 │   ├── 01_EDA.ipynb
 │   ├── 02_Preprocessing.ipynb
-│   └── 03_Clustering.ipynb
+│   ├── 03_Clustering.ipynb
+│   └── 04_Alternative_Clustering
 │
-├── models/ <- Trained models (to be added later)
-│
-├── dashboard/ <- Streamlit application (planned)
-│   └── app.py
+├── models/ <- Trained models and related objects
+│   ├── kmeans_model.pkl
+│   ├── standard_scaler.pkl
+│   ├── label_encoders.pkl
+│   ├── label_maps.json
+│   ├── segment_names.json
+│   └── feature_cols.json
 │
 ├── images/ <- Visual outputs and plots
 │
+├── src/ <- Inference scripts 
+│   ├── inference.py   <- Loads trained artifacts and predicts customer segment for new records 
+│   └── __pycache__/   <- Compiled Python cache files
+│
+├── app.py
 ├── README.md
-└── requirements.txt
+├── requirements.txt
 ```
 ---
 
@@ -70,15 +82,3 @@ streamlit run dashboard/app.py
 - Handle missing values and encode categorical variables
 - Segment customers into clusters based on financial & demographic features
 - Provide insights for potential use cases in credit risk management and marketing
-
-## 📈 Results (to be updated)
-- Visual insights from EDA (distributions, correlations)
-- Cleaned dataset ready for modeling
-- Customer clusters with interpretation (e.g., low-risk / high-risk groups)
-- Documentation of key insights
-
-## 🔮 Future Work
-- Experiment with different clustering algorithms (K-Means, Hierarchical, DBSCAN)
-- Compare with supervised approaches using alternative datasets (with Risk variable)
-- Develop a Streamlit dashboard for interactive customer segmentation
-- Explore integration with BI tools (Power BI, Tableau) for reporting
