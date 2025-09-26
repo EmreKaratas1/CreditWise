@@ -7,6 +7,14 @@ from src.inference import predict_row, load_artifacts
 st.set_page_config(page_title="CreditWise Segmentation", layout="wide")
 st.title("CreditWise – Customer Segmentation (KMeans)")
 
+# Place this right under the st.title(...) line
+st.markdown("""
+**CreditWise** segments customer profiles into three groups using a **K-Means (k=3)** model trained on the **German Credit** dataset (≈1,000 records) after cleaning and scaling. This lets you instantly see which segment a new record is closest to.
+
+*Go ahead — try it by filling out the form below.*
+""")
+
+
 # --- Paths (absolute, based on this file) ------------------------------------
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
@@ -87,14 +95,3 @@ with c1:
     show_img(IMG_DIR / "housing_share_by_cluster.png", "Housing Share by Cluster")
 with c2:
     show_img(IMG_DIR / "purpose_share_by_cluster.png", "Purpose (Top 6) Share by Cluster")
-
-# (3) Notes / Markdown (report area)
-st.markdown("### Notes")
-st.markdown(
-    """
-- **Model:** K-Means (k=3)  
-- **Preprocessing:** StandardScaler + Encoding  
-- **Segment names:** Balanced, Younger/Short-Duration, High-Amount/Long-Duration  
-- **Observation:** Purpose distributions are pronounced across segments; “car/business” → tendency toward Segment 2.
-"""
-)
