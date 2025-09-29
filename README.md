@@ -94,4 +94,3 @@ The clustering step groups the 1,000 customers into three interpretable segments
 | Younger / Short-Duration (Cluster 1) | 40.8% (408) | 33.5 | 19.8 | 2,803 | Housing: own 73%, rent 18%<br>Purpose: radio/TV 50%, furniture/equipment 35% |
 | High-Amount / Long-Duration (Cluster 2) | 44.5% (445) | 36.8 | 22.1 | 3,841 | Housing: own 68%, rent 18%<br>Purpose: car 76%, business 22% |
 
-This snapshot helps stakeholders connect the model’s output to concrete customer behaviors before diving into the dashboards or notebooks.
